@@ -662,6 +662,7 @@ def post_process_prediction(
 
 def cli_main():
     parser = options.get_interactive_generation_parser()
+    parser.add_argument("--local-rank", default=0)
     args = options.parse_args_and_arch(parser)
     distributed_utils.call_main(convert_namespace_to_omegaconf(args), main)
 

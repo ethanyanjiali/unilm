@@ -1,6 +1,6 @@
 #!/bin/bash
 
-model_path=/home/yanjia/unilm/kosmos-2/kosmos-2.pt
+model_path=./kosmos-2.pt
 
 master_port=$((RANDOM%1000+20000))
 
