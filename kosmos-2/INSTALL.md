@@ -14,7 +14,7 @@ export LD_LIBRARY_PATH="/usr/local/cuda-12.1/lib64:$LD_LIBRARY_PATH"
 
 ```
 pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu121 --force-reinstall
-pip uninstall -y xformers && MAX_JOBS=11 pip install -v -U git+https://github.com/facebookresearch/xformers.git@main#egg=xformers
+pip uninstall -y xformers && MAX_JOBS=2 pip install -v -U git+https://github.com/facebookresearch/xformers.git@main#egg=xformers
 pip install protobuf==3.20.*
 pip install tensorboard
 pip uninstall deepspeed
